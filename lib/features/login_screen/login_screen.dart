@@ -38,11 +38,11 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
-        physics: const NeverScrollableScrollPhysics(),
+        // physics: const NeverScrollableScrollPhysics(),
         child: Padding(
           padding: EdgeInsets.all(width * .1),
           child: SizedBox(
-            height: height,
+            height: height * 0.85,
             width: width,
             child: Column(
               // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
