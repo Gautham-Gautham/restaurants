@@ -8,6 +8,8 @@ import 'package:the_grandmerche/main.dart';
 import 'package:the_grandmerche/model/restaurant_model.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
+import '../../core/common/snack_bar.dart';
+
 class HotelDetailsScreen extends ConsumerStatefulWidget {
   final Restaurant restaurant;
   final String hotelImage;
@@ -29,7 +31,9 @@ class _HotelDetailsScreenState extends ConsumerState<HotelDetailsScreen> {
     String googleUrl =
         'https://www.google.com/maps/search/?api=1&query=$latitude,$longitude';
     if (await canLaunchUrlString(googleUrl)) {
-      await launchUrlString(googleUrl);
+      await launchUrlString(googleUrl).then(
+        (value) => customSnackbar(context, 'message'),
+      );
     } else {
       throw 'Could not launch $googleUrl';
     }

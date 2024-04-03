@@ -5,6 +5,8 @@ import 'package:the_grandmerche/core/constants/pictures/pictures.dart';
 import 'package:the_grandmerche/features/home_screen/screen/home_screen.dart';
 import 'package:the_grandmerche/main.dart';
 
+import '../../core/common/snack_bar.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -30,6 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
             builder: (context) => const HomeScreen(),
           ),
           (route) => false);
+      customSnackbar(context, "Successfully Logged In");
     });
   }
 
