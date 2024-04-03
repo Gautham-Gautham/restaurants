@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "756600431480",
+    "project_id": "thegrandmarche-283fe",
+    "storage_bucket": "thegrandmarche-283fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756600431480:android:84727aa62bf67fb7731e8d",
+        "android_client_info": {
+          "package_name": "com.example.the_grandmerche"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsHbQSWmQsr0-Shii22ByN_C5fw71jSwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
